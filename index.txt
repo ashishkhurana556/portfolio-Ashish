@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashish Khurana - Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg {
+  background-image:
+    linear-gradient(rgba(102,126,234, 0.6), rgba(118,75,162, 0.6)),
+    url('image2.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+        .skill-tag { transition: all 0.3s ease; }
+        .skill-tag:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .section-card { transition: all 0.3s ease; }
+        .section-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .timeline-item::before { content: ''; position: absolute; left: -8px; top: 8px; width: 16px; height: 16px; background: #667eea; border-radius: 50%; border: 3px solid white; }
+        .timeline-line { position: absolute; left: -1px; top: 24px; bottom: -24px; width: 2px; background: #e5e7eb; }
+        @media print { .no-print { display: none !important; } }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header Section -->
+    <header class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-6">
+<div class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white shadow-lg">
+    <img src="image.jpg" alt="Ashish Khurana" class="w-full h-full object-cover">
+</div>
+
+                <h1 class="text-5xl font-bold mb-4">Ashish Khurana</h1>
+                <p class="text-xl mb-6 opacity-90">Software Engineer & Data Specialist</p>
+                <div class="flex flex-wrap justify-center gap-6 text-lg">
+                    <a href="mailto:ashishkhurana0011@gmail.com" class="hover:text-blue-200 transition-colors">
+                        <i class="fas fa-envelope mr-2"></i>ashishkhurana0011@gmail.com
+                    </a>
+                    <span class="hover:text-blue-200">
+                        <i class="fas fa-phone mr-2"></i>(669) 499-6315
+                    </span>
+                    <a href="#" class="hover:text-blue-200 transition-colors">
+                        <i class="fab fa-linkedin mr-2"></i>LinkedIn
+                    </a>
+                </div>
+            </div>
+            <button onclick="window.print()" class="no-print bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+                <i class="fas fa-download mr-2"></i>Download PDF
+            </button>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-6 py-12">
+        <div class="grid lg:grid-cols-3 gap-8">
+            <!-- Left Column -->
+            <div class="lg:col-span-1 space-y-8">
+                <!-- Education -->
+                <div class="section-card bg-white rounded-xl p-6 shadow-lg">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                        <i class="fas fa-graduation-cap text-blue-600 mr-3"></i>Education
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="border-l-4 border-blue-500 pl-4">
+                            <h3 class="font-semibold text-lg">Master of Science in Information Technology</h3>
+                            <p class="text-blue-600 font-medium">Arizona State University</p>
+                            <p class="text-gray-600">Aug 2022 - May 2024</p>
+                            <p class="text-sm text-gray-700 mt-2">GPA: 4.00/4.00</p>
+                            <p class="text-sm text-green-600 mt-1">AWS Certified Solutions Architect – Associate</p>
+                        </div>
+                        <div class="border-l-4 border-purple-500 pl-4">
+                            <h3 class="font-semibold text-lg">Bachelor of Technology in Computer Science</h3>
+                            <p class="text-purple-600 font-medium">Amity University, India</p>
+                            <p class="text-gray-600">Aug 2017 - May 2021</p>
+                            <p class="text-sm text-gray-700 mt-2">GPA: 3.55/4.00</p>
+                            <p class="text-sm text-green-600 mt-1">Teaching Assistant for AWS Cloud and Big Data</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Skills -->
+                <div class="section-card bg-white rounded-xl p-6 shadow-lg">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                        <i class="fas fa-code text-blue-600 mr-3"></i>Technical Skills
+                    </h2>
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="font-semibold text-gray-700 mb-2">Programming Languages</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Python</span>
+                                <span class="skill-tag bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">C#</span>
+                                <span class="skill-tag bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                                <span class="skill-tag bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">TypeScript</span>
+                                <span class="skill-tag bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">SQL</span>
+                                <span class="skill-tag bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">C++</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-700 mb-2">Frameworks & Web</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Django</span>
+                                <span class="skill-tag bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-sm">React.js</span>
+                                <span class="skill-tag bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Spring Boot</span>
+                                <span class="skill-tag bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">RESTful APIs</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-700 mb-2">Data & Visualization</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Apache Superset</span>
+                                <span class="skill-tag bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Power BI</span>
+                                <span class="skill-tag bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Tableau</span>
+                                <span class="skill-tag bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-700 mb-2">Cloud & DevOps</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">AWS</span>
+                                <span class="skill-tag bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Docker</span>
+				<span class="skill-tag bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Airflow</span>
+                                <span class="skill-tag bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Kubernetes</span>
+                                <span class="skill-tag bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Jenkins</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="lg:col-span-2 space-y-8">
+                <!-- Professional Experience -->
+                <div class="section-card bg-white rounded-xl p-6 shadow-lg">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                        <i class="fas fa-briefcase text-blue-600 mr-3"></i>Professional Experience
+                    </h2>
+                    <div class="space-y-8 relative">
+                        <div class="timeline-line"></div>
+                        
+                        <!-- Current Role -->
+                        <div class="timeline-item relative pl-8">
+                            <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg">
+                                <div class="flex flex-wrap justify-between items-start mb-3">
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-800">Software Engineer (Full Time)</h3>
+                                        <p class="text-blue-600 font-semibold">OnRule Inc., California, USA</p>
+                                    </div>
+                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">July 2024 - Present</span>
+                                </div>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-blue-500 mr-2 mt-1 text-xs"></i>Lead data administration team, mentoring on ETL pipeline design using Python and PostgreSQL</li>
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-blue-500 mr-2 mt-1 text-xs"></i>Designed Kimball data model and custom compliance dashboards for actionable insights</li>
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-blue-500 mr-2 mt-1 text-xs"></i><span class="font-semibold text-green-600">Improved performance by 80%</span> through SQLAlchemy optimization</li>
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-blue-500 mr-2 mt-1 text-xs"></i>Implemented CI/CD workflows reducing deployment cycles from weeks to hours</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Previous Role at OnRule -->
+                        <div class="timeline-item relative pl-8">
+                            <div class="bg-gray-50 p-6 rounded-lg">
+                                <div class="flex flex-wrap justify-between items-start mb-3">
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-800">Software Engineer</h3>
+                                        <p class="text-blue-600 font-semibold">OnRule Inc., California, USA</p>
+                                    </div>
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">May 2023 - Jan 2024</span>
+                                </div>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-blue-500 mr-2 mt-1 text-xs"></i>Analyzed compliance data for Juniper Networks and Extreme Networks using Apache Superset</li>
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-blue-500 mr-2 mt-1 text-xs"></i><span class="font-semibold text-green-600">Reduced query response times by 70%</span> with optimized ETL pipeline</li>
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-blue-500 mr-2 mt-1 text-xs"></i><span class="font-semibold text-green-600">Improved data processing speed by 65%</span> through automation</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- TCS Role -->
+                        <div class="timeline-item relative pl-8">
+                            <div class="bg-gray-50 p-6 rounded-lg">
+                                <div class="flex flex-wrap justify-between items-start mb-3">
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-800">Software Engineer</h3>
+                                        <p class="text-purple-600 font-semibold">Tata Consultancy Services (FIS Global), Delhi, India</p>
+                                    </div>
+                                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Jan 2021 - Aug 2022</span>
+                                </div>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-blue-500 mr-2 mt-1 text-xs"></i>Maintained Commercial Loan Origination platform in C# and MongoDB</li>
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-blue-500 mr-2 mt-1 text-xs"></i><span class="font-semibold text-green-600">Improved throughput by 75%</span> in data pipelines</li>
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-blue-500 mr-2 mt-1 text-xs"></i><span class="font-semibold text-green-600">Reduced unauthorized access by 40%</span> through security enhancements</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Junior Role -->
+                        <div class="timeline-item relative pl-8">
+                            <div class="bg-gray-50 p-6 rounded-lg">
+                                <div class="flex flex-wrap justify-between items-start mb-3">
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-800">Jr. Software Engineer</h3>
+                                        <p class="text-orange-600 font-semibold">30Days Technologies Pvt. Ltd., Delhi, India</p>
+                                    </div>
+                                    <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">Jan 2020 - Dec 2020</span>
+                                </div>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-blue-500 mr-2 mt-1 text-xs"></i>Developed responsive AI-driven smart attendance system interface</li>
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-blue-500 mr-2 mt-1 text-xs"></i><span class="font-semibold text-green-600">Cut UI development time by 60%</span> with Angular component library</li>
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-blue-500 mr-2 mt-1 text-xs"></i>Built Django-based web apps with REST APIs and authentication</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Key Achievements -->
+                <div class="section-card bg-white rounded-xl p-6 shadow-lg">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                        <i class="fas fa-trophy text-yellow-500 mr-3"></i>Key Achievements
+                    </h2>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
+                            <div class="text-2xl font-bold text-green-600">75%</div>
+                            <div class="text-sm text-gray-700">Data Pipeline Throughput Improvement</div>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
+                            <div class="text-2xl font-bold text-blue-600">70%</div>
+                            <div class="text-sm text-gray-700">Query Response Time Reduction</div>
+                        </div>
+                        <div class="bg-purple-50 p-4 rounded-lg border-l-4 border-purple-500">
+                            <div class="text-2xl font-bold text-purple-600">80%</div>
+                            <div class="text-sm text-gray-700">Performance Optimization</div>
+                        </div>
+                        <div class="bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-500">
+                            <div class="text-2xl font-bold text-yellow-600">4.0</div>
+                            <div class="text-sm text-gray-700">Perfect GPA in Master's</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-300">© 2024 Ashish Khurana. All rights reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">Software Engineer passionate about data-driven solutions and cloud technologies</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for any internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all section cards
+        document.querySelectorAll('.section-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9687be310697201d',t:'MTc1NDA3NjU1MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
